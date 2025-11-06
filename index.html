@@ -1,577 +1,1219 @@
-<!DOCTYPE html>
-<html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Trener Personalny & Fizjoterapia - Praczę Duże. Specjalizacja: rekonwalescencja, ciąża, korekcja postawy, osoby 40+">
-    <meta name="keywords" content="trener personalny, fizjoterapia, Praczę Duże, Tarczyn">
-    <meta name="author" content="Damian Krawiec">
-    <title>Trener Personalny & Fizjoterapia - Praczę Duże</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
-    <!-- NAWIGACJA -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-wrapper">
-                <div class="logo">
-                    <h2>Studio Las</h2>
-                </div>
-                <button class="mobile-menu-btn" id="mobileMenuBtn">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <ul class="nav-menu" id="navMenu">
-    <li><a href="#home">Start</a></li>
-    <li><a href="#about">O mnie</a></li>
-    <li><a href="#passions">Pasje</a></li>
-    <li><a href="#specializations">Specjalizacje</a></li>
-    <li><a href="#pricing">Cennik</a></li>
-    <li><a href="#certifications">Certyfikaty</a></li>
-    <li><a href="#process">Jak to działa</a></li>
-    <li><a href="#testimonials">Opinie</a></li>
-    <li><a href="#faq">FAQ</a></li>
-    <li><a href="#contact">Kontakt</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+/* ===================================
+   RESET & VARIABLES
+   =================================== */
 
-           <!-- HERO SECTION -->
-    <section id="home" class="hero" style="background: linear-gradient(rgba(45, 80, 22, 0.85), rgba(58, 107, 71, 0.85)), url('img/studio-exterior.jpg') center/cover no-repeat;">
-        <div class="hero-split">
-            <div class="hero-image-container">
-                <img src="img/damian-hero2.jpg" alt="Damian Krawiec - Trener Personalny" class="hero-image">
-            </div>
-            <div class="hero-content">
-                <h1>Kiedy Standard Nie Wystarczy – Personalna Fizjoterapia dla Wymagających</h1>
-                
-                <p class="hero-credentials">
-                    <strong>Magister AWF • 10 lat doświadczenia • 500+ zadowolonych klientów</strong>
-                </p>
-                
-                <p class="hero-location">📍 Praczę Duże (10 min od Piaseczna) • Studio w sercu lasu</p>
-                
-                <p class="hero-subtitle">
-                    <strong>Specjalizacje:</strong> Rekonwalescencja | Ciąża i po ciąży | Korekcja postawy
-                </p>
-                
-                <!-- AUTHORITY BOX -->
-                <div class="waitlist-box">
-                    <p class="waitlist-title">🎁 Specjalna oferta na start</p>
-                    <p class="waitlist-subtitle">Pierwsza konsultacja diagnostyczna:</p>
-                    <div class="promo-price">
-                        <span class="old-price">200 PLN</span>
-                        <span class="new-price">50 PLN</span>
-                    </div>
-                    <ul class="waitlist-benefits">
-                        <li>✅ Badanie składu ciała (Tanita RD-545)</li>
-                        <li>✅ Analiza funkcjonalna i test postawy</li>
-                        <li>✅ Spersonalizowany plan treningowy</li>
-                    </ul>
-                    <a href="https://wa.me/48503975998?text=Cześć%20Damian,%20chcę%20umówić%20się%20na%20pierwszą%20konsultację%20(50%20PLN)" class="btn btn-cta" target="_blank">Umawiam się na konsultację (50 PLN)</a>
-                </div>
-            </div>
-        </div>
-    </section>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-
-
-    <!-- O MNIE -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-header">
-                <h2>O mnie</h2>
-                <p>Magister Wychowania Fizycznego, Fizjoterapia w Sporcie</p>
-            </div>
-            
-            <div class="about-content">
-                <div class="about-image">
-                    <img src="img/damian-about.jpg" alt="Damian Krawiec - Trener Personalny i Fizjoterapeuta">
-                </div>
-                
-                <div class="about-text">
-                    <h3>Nie jestem "typowym" trenerem</h3>
-                    
-                    <p><strong>Magister AWF + 10 lat praktyki = podejście oparte na nauce, a nie na trendach.</strong></p>
-                    
-                    <p>Specjalizuję się w przypadkach, które standardowe siłownie odkładają na bok:</p>
-                    
-                    <ul class="specialties-list">
-                        <li>✓ Osoby po urazach i operacjach</li>
-                        <li>✓ Kobiety w ciąży i po porodzie</li>
-                        <li>✓ Osoby 40+ (zaawansowane wiekowo)</li>
-                        <li>✓ Korekcja postawy i problemy mięśniowe</li>
-                    </ul>
-                    
-                    <p><strong>Rezultat?</strong> 500+ klientów, którzy wrócili do pełni sprawności lub osiągnęli swoje cele.</p>
-
-                    <div class="qualifications">
-                        <h4>Wykształcenie:</h4>
-                        <ul>
-                            <li><i class="fas fa-graduation-cap"></i> Magister Wychowania Fizycznego (AWF Warszawa)</li>
-                            <li><i class="fas fa-graduation-cap"></i> Fizjoterapia w Sporcie (studia podyplomowe)</li>
-                            <li><i class="fas fa-certificate"></i> 30+ certyfikatów z treningu funkcjonalnego i fizjoterapii</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+:root {
+    --primary-color: #0066FF;
+    --secondary-color: #00B86D;
+    --accent-color: #FF6B35;
+    --dark-text: #333333;
+    --light-text: #666666;
+    --bg-light: #F5F5F5;
+    --bg-white: #FFFFFF;
+    --border-color: #E0E0E0;
     
+    --font-heading: 'Poppins', 'Inter', 'Roboto', sans-serif;
+    --font-body: 'Lato', 'Segoe UI', sans-serif;
+    
+    --transition: all 0.3s ease;
+    
+    /* Design system additions */
+    --radius-sm: 6px;
+    --radius-base: 8px;
+    --radius-md: 10px;
+    --radius-lg: 12px;
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.04);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.04);
+    --font-size-sm: 12px;
+    --font-size-md: 14px;
+    --font-size-lg: 16px;
+    --font-size-xl: 18px;
+    --font-size-2xl: 20px;
+    --font-size-3xl: 24px;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 550;
+    --font-weight-bold: 600;
+    --color-bg-primary: #F5F5F5;
+    --color-bg-secondary: #FFFFFF;
+    --color-text-primary: #333333;
+    --color-text-secondary: #666666;
+    --color-accent-primary: #0066FF;
+    --color-accent-secondary: #00B86D;
+    --color-border: #E0E0E0;
+    --duration-normal: 250ms;
+    --ease-standard: cubic-bezier(0.16, 1, 0.3, 1);
+}
 
+html {
+    scroll-behavior: smooth;
+}
 
-    <!-- SPECJALIZACJE -->
-    <section id="specializations" class="specializations">
-        <div class="container">
-            <div class="section-header">
-                <h2>Moje Specjalizacje</h2>
-                <p>Pracuję z różnymi grupami klientów</p>
-            </div>
+body {
+    font-family: var(--font-body);
+    color: var(--dark-text);
+    background-color: var(--bg-white);
+    line-height: 1.6;
+}
 
-            <div class="specs-grid">
-                <div class="spec-card">
-                    <div class="spec-icon">
-                        <i class="fas fa-heartbeat"></i>
-                    </div>
-                    <h3>Rekonwalescencja</h3>
-                    <p>Po urazach i operacjach - powrót do sprawności z bezpiecznym podejściem.</p>
-                    <p class="testimonial-quote">"Pomocny trener, zrozumiał moje ograniczenia po kontuzji"</p>
-                </div>
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
-                <div class="spec-card">
-                    <div class="spec-icon">
-                        <i class="fas fa-child"></i>
-                    </div>
-                    <h3>Ciąża & Po Ciąży</h3>
-                    <p>Trening dla kobiet w ciąży i powrót do formy po porodzie.</p>
-                    <p class="testimonial-quote">"Czułam się bezpiecznie, a efekty były widoczne"</p>
-                </div>
+/* ===================================
+   TYPOGRAPHY
+   =================================== */
 
-                <div class="spec-card">
-                    <div class="spec-icon">
-                        <i class="fas fa-spine"></i>
-                    </div>
-                    <h3>Korekcja Postawy</h3>
-                    <p>Problemy mięśniowe, napięcia, korekcja schorzeń postawy.</p>
-                    <p class="testimonial-quote">"Moje bóle pleców zniknęły, program był dla mnie"</p>
-                </div>
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    line-height: 1.3;
+}
 
-                <div class="spec-card">
-                    <div class="spec-icon">
-                        <i class="fas fa-dumbbell"></i>
-                    </div>
-                    <h3>Osoby 40+</h3>
-                    <p>Trening dla osób bez doświadczenia - budowanie siły i wytrzymałości.</p>
-                    <p class="testimonial-quote">"Nigdy nie myślałem że mogę trenować, jestem zachwycony"</p>
-                </div>
-            </div>
-        </div>
-    </section>
+h1 {
+    font-size: 3rem;
+    color: var(--dark-text);
+}
 
-    <!-- CENNIK -->
-    <section id="pricing" class="pricing">
-        <div class="container">
-            <div class="section-header">
-                <h2>Pakiety Treningowe</h2>
-                <p>Elastyczne opcje dopasowane do Twoich potrzeb</p>
-            </div>
+h2 {
+    font-size: 2.2rem;
+    color: var(--dark-text);
+}
 
-            <div class="pricing-grid">
-                <div class="price-card">
-                    <h3>Sesja Pojedyncza</h3>
-                    <div class="price">150 PLN</div>
-                    <p class="price-desc">1 sesja treningowa</p>
-                    <ul class="price-features">
-                        <li><i class="fas fa-check"></i> Trening 1-na-1 (60 min)</li>
-                        <li><i class="fas fa-check"></i> Badanie składu ciała (Tanita)</li>
-                        <li><i class="fas fa-check"></i> Test funkcjonalny</li>
-                        <li><i class="fas fa-check"></i> Plan treningowy</li>
-                    </ul>
-                    <a href="https://wa.me/48503975998?text=Chciałbym%20zapisać%20się%20na%20sesję%20pojedynczą" class="btn btn-outline" target="_blank">Zainteresuj mnie</a>
-                </div>
+h3 {
+    font-size: 1.4rem;
+}
 
-                <div class="price-card featured">
-                    <div class="badge">Polecany</div>
-                    <h3>Pakiet 10 Sesji</h3>
-                    <div class="price">1300 PLN <span class="price-per">130/sesja</span></div>
-                    <p class="price-desc">Stawka 130 PLN per sesja</p>
-                    <ul class="price-features">
-                        <li><i class="fas fa-check"></i> Treningi 1-na-1 (60 min)</li>
-                        <li><i class="fas fa-check"></i> Badanie składu ciała</li>
-                        <li><i class="fas fa-check"></i> Elastyczne godziny</li>
-                        <li><i class="fas fa-check"></i> Dostosowany plan</li>
-                        <li><i class="fas fa-check"></i> Zaoszczędzisz 200 PLN</li>
-                    </ul>
-                    <a href="https://wa.me/48503975998?text=Chciałbym%20kupić%20pakiet%2010%20sesji" class="btn btn-primary" target="_blank">Kup teraz</a>
-                </div>
+p {
+    font-size: 1rem;
+    color: var(--light-text);
+    margin-bottom: 1rem;
+}
 
-                <div class="price-card">
-                    <h3>Sesja w Parze (1-na-2)</h3>
-                    <div class="price">200 PLN</div>
-                    <p class="price-desc">Na osobę, od otwarcia studio</p>
-                    <ul class="price-features">
-                        <li><i class="fas fa-check"></i> Trening 1-na-2 (60 min)</li>
-                        <li><i class="fas fa-check"></i> Wspólne cele treningowe</li>
-                        <li><i class="fas fa-check"></i> Motywacja i wspólnota</li>
-                        <li><i class="fas fa-check"></i> Elastyczne godziny</li>
-                    </ul>
-                    <a href="https://wa.me/48503975998?text=Jestem%20zainteresowany%20treningami%201-na-2" class="btn btn-outline" target="_blank">Zapytaj o dostępność</a>
-                </div>
-            </div>
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: var(--transition);
+}
 
-            <div class="pricing-note">
-                <p><strong>Studio otwarte:</strong> Poniedziałek - Piątek, 17:00 - 22:00</p>
-                <p><strong>Godziny można negocjować</strong> w zależności od dostępności</p>
-            </div>
-        </div>
-    </section>
+a:hover {
+    color: var(--accent-color);
+}
 
-    <!-- JAK TO DZIAŁA -->
-    <section id="process" class="process">
-        <div class="container">
-            <div class="section-header">
-                <h2>Jak Pracuję</h2>
-                <p>Prosty i przejrzysty proces</p>
-            </div>
+/* ===================================
+   BUTTONS
+   =================================== */
 
-            <div class="process-steps">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <h3>Pierwszy Kontakt</h3>
-                    <p>Skontaktuj się poprzez WhatsApp, email lub formularz. Powiem Ci wszystko o ofercie.</p>
-                </div>
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: var(--transition);
+    border: 2px solid transparent;
+    cursor: pointer;
+    text-align: center;
+    font-size: 0.95rem;
+}
 
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <h3>Formularz Diagnostyczny</h3>
-                    <p>Otrzymasz formularz do wypełnienia - poznasz mnie więcej o Tobie, Twoim zdrowiu i celach.</p>
-                </div>
+.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+}
 
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <h3>Badanie Wstępne</h3>
-                    <p>Badanie składu ciała (Tanita RD-545), test funkcjonalny i rozmowa szczegółowa.</p>
-                </div>
+.btn-primary:hover {
+    background-color: #0052CC;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 102, 255, 0.2);
+}
 
-                <div class="step">
-                    <div class="step-number">4</div>
-                    <h3>Plan Treningowy</h3>
-                    <p>Na bazie badań tworzę spersonalizowany plan dostosowany do Twoich potrzeb i możliwości.</p>
-                </div>
+.btn-outline {
+    background-color: transparent;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
 
-                <div class="step">
-                    <div class="step-number">5</div>
-                    <h3>Regularne Treningi</h3>
-                    <p>Trenujemy systematycznie, kontroluję postępy, dopasowuję plan na bieżąco.</p>
-                </div>
+.btn-outline:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
 
-                <div class="step">
-                    <div class="step-number">6</div>
-                    <h3>Wyniki</h3>
-                    <p>Rezultaty fizyczne i zmiana podejścia do zdrowia - trwała zmiana.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+/* ===================================
+   NAVIGATION
+   =================================== */
 
-    <!-- TESTIMONIALE -->
-    <section id="testimonials" class="testimonials">
-        <div class="container">
-            <div class="section-header">
-                <h2>Opinie Klientów</h2>
-                <p>To mówią ci, którzy trenowali ze mną</p>
-            </div>
+.navbar {
+    background-color: var(--bg-white);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
 
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p>"Profesjonalne podejście, zrozumienie moich ograniczeń i faktycznie zadziałało. Po pół roku zamiast bólu mam siłę i energię."</p>
-                    <p class="testimonial-author">Joanna, 42 lata</p>
-                </div>
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
 
-                <div class="testimonial-card">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p>"Pracowaliśmy nad korekcją postawy po urazach. Trener wiedział dokładnie co robić, nigdy się nie bałem. Polecam!"</p>
-                    <p class="testimonial-author">Marta, 35 lat</p>
-                </div>
+.logo h2 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
 
-                <div class="testimonial-card">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p>"Po ciąży chciałam wrócić do formy. Podejście trenera było miłe, bezpieczne i efektywne. Osiągnęłam swój cel!"</p>
-                    <p class="testimonial-author">Katarzyna, 38 lat</p>
-                </div>
-            </div>
-        </div>
-    </section>
-<!-- MOJE PASJE -->
-    <section id="passions" class="passions">
-        <div class="container">
-            <div class="section-header">
-                <h2>Aktywny Lifestyle</h2>
-                <p>Sport to nie tylko zawód - to moja życiowa filozofia</p>
-            </div>
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
 
-            <div class="passions-grid">
-                <div class="passion-card">
-                    <img src="img/narciarstwo.jpg" alt="Narciarstwo - snowboard" class="passion-image">
-                    <div class="passion-overlay">
-                        <h3>⛷️ Góry & Narciarstwo</h3>
-                        <p>Tutaj rodziła się moja pasja do sportu. Każda trasa to nowe wyzwanie.</p>
-                    </div>
-                </div>
+.nav-menu a {
+    color: var(--dark-text);
+    font-weight: 500;
+    transition: var(--transition);
+}
 
-                <div class="passion-card">
-                    <img src="img/spadochroniarstwo.jpg" alt="Skydiving - spadochroniarstwo" class="passion-image">
-                    <div class="passion-overlay">
-                        <h3>🪂 Skydiving</h3>
-                        <p>Przełamywanie własnych granic i testowanie odwagi - to moja natura.</p>
-                    </div>
-                </div>
+.nav-menu a:hover {
+    color: var(--primary-color);
+}
 
-                <div class="passion-card">
-    <img src="img/outdoor.jpg" alt="Outdoor - treking i przygody" class="passion-image">
-                    <div class="passion-overlay">
-                        <h3>🏔️ Outdoor & Treking</h3>
-                        <p>Natura to moja inspiracja. Tu znajduję spokój i siłę do działania.</p>
-                    </div>
-                </div>
+.mobile-menu-btn {
+    display: none;
+    flex-direction: column;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
 
-                                <div class="passion-card">
-                    <img src="img/damian-about2.jpg" alt="Podróże po świecie" class="passion-image">
-                    <div class="passion-overlay">
-                        <h3>🌍 Podróże (25 krajów)</h3>
-                        <p>Różne kultury uczą mnie otwartości i zrozumienia ludzi. Każda podróż to nowa perspektywa.</p>
-                    </div>
-                </div>
+.mobile-menu-btn span {
+    width: 25px;
+    height: 3px;
+    background-color: var(--dark-text);
+    margin: 5px 0;
+    transition: var(--transition);
+}
 
-            </div>
+@media (max-width: 768px) {
+    .mobile-menu-btn {
+        display: flex;
+    }
 
-            <div class="passion-philosophy">
-                <p>Wierzę, że wszechstronne doświadczenia życiowe pomagają mi lepiej rozumieć moich klientów. Nie jestem tylko trenerem - jestem człowiekiem, który wciąż się uczy, rozwija i szuka nowych wyzwań.</p>
-            </div>
-        </div>
-    </section>
-    <!-- CERTYFIKATY & KWALIFIKACJE -->
-    <section id="certifications" class="certifications">
-        <div class="container">
-            <div class="section-header">
-                <h2>Edukacja & Certyfikaty</h2>
-                <p>Uczę się przez całe życie, żeby dawać Ci najlepsze wsparcie</p>
-            </div>
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background-color: var(--bg-white);
+        padding: 20px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        gap: 0;
+    }
 
-            <div class="certifications-content">
-                <div class="cert-intro">
-                    <p>Jestem absolwentem <strong>Akademii Wychowania Fizycznego im. Józefa Piłsudskiego w Warszawie</strong> (studia magisterskie) oraz studiów podyplomowych z <strong>Fizjoterapii w Sporcie</strong>.</p>
-                    <p>Przez ostatnie lata zdobywałem certyfikaty z zakresu treningu funkcjonalnego, fizjoterapii, pracy z kobietami w ciąży, osób po urazach i starszych. Każdy kurs to dla mnie nowe narzędzie, które mogę wykorzystać w pracy z Tobą.</p>
-                </div>
+    .nav-menu.active {
+        display: flex;
+    }
 
-                <div class="cert-highlights">
-                    <h3>Wybrane Kwalifikacje:</h3>
-                    <ul class="cert-list">
-                        <li><i class="fas fa-graduation-cap"></i> <strong>Magister Wychowania Fizycznego</strong> - AWF Warszawa</li>
-                        <li><i class="fas fa-certificate"></i> <strong>Fizjoterapia w Sporcie</strong> - Studia podyplomowe</li>
-                        <li><i class="fas fa-dumbbell"></i> <strong>Trening Funkcjonalny</strong> - Certyfikowany Specjalista</li>
-                        <li><i class="fas fa-user-md"></i> <strong>Pierwsza Pomoc Medyczna</strong> - Aktualny certyfikat</li>
-                    </ul>
-                </div>
+    .nav-menu li {
+        padding: 10px 0;
+        border-bottom: 1px solid var(--border-color);
+    }
+}
 
-                <div class="cert-cta">
-                    <p>Chcesz sprawdzić wszystkie moje kwalifikacje i certyfikaty?</p>
-                    <a href="https://sites.google.com/view/trener-personalny-warszawa/referencje" target="_blank" class="btn btn-primary">
-                        <i class="fas fa-file-alt"></i> Zobacz Pełną Listę Certyfikatów
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+/* ===================================
+   HERO SECTION - AUTHORITY VERSION
+   =================================== */
 
+.hero {
+    padding: 0;
+    min-height: auto;
+}
 
-    <!-- FAQ -->
-    <section id="faq" class="faq">
-        <div class="container">
-            <div class="section-header">
-                <h2>Często Zadawane Pytania</h2>
-                <p>Odpowiedzi na Twoje pytania</p>
-            </div>
+.hero-split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 600px;
+    align-items: center;
+}
 
-            <div class="faq-items">
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>Czy potrzebuję doświadczenia w treningach?</h3>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Absolutnie nie! Pracuję z osobami na każdym poziomie - od całkowitych początkujących po zaawansowanych. Każdy program jest dostosowany do Twoich możliwości i doświadczenia.</p>
-                    </div>
-                </div>
+.hero-image-container {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
 
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>Czy mogę trenować, jeśli mam uraz lub problemy zdrowotne?</h3>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Tak! To moja specjalizacja. Pracuję z osobami na rekonwalescencji. Przeprowadzam szczegółowe badanie i adaptuję wszystko do Twoich ograniczeń. Przed każdym treningiem pytam o Twój stan zdrowia.</p>
-                    </div>
-                </div>
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
 
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>Czy oferujesz treningi dla kobiet w ciąży?</h3>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Tak, to jedna z moich specjalizacji! Oferuję bezpieczne treningi dla kobiet w ciąży i kompleksowe podejście do powrotu do formy po porodzie. Każdy program jest dostosowany do aktualnego stanu ciąży.</p>
-                    </div>
-                </div>
+.hero-content {
+    padding: 60px;
+    color: white;
+}
 
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>Kiedy studio otwiera się?</h3>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Studio otwiera się <strong>koniec 2025 roku</strong>. Chciałbym się już teraz poznać z potencjalnymi klientami, odpowiadać na pytania i budować społeczność. Zapisz się do newslettera aby być na bieżąco!</p>
-                    </div>
-                </div>
+.hero-content h1 {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
 
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>Jakie są godziny otwarcia?</h3>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Studio będzie otwarte <strong>codziennie 17:00 - 22:00</strong>. Skontaktuj się by zaproponować inne godziny - mogę zrobić wyjątek dla stałego klienta lub grupy osób.</p>
-                    </div>
-                </div>
+.hero-credentials {
+    font-size: var(--font-size-lg);
+    color: white;
+    margin: 15px 0;
+    font-weight: var(--font-weight-semibold);
+}
 
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>Czy są treningi grupowe?</h3>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Na początek skupiam się na treningach indywidualnych (1-na-1). Po otwarciu planuję wprowadzić treningi w parach (1-na-2). Wszystko zależy od zapotrzebowania klientów.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+.hero-location {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: rgba(255, 255, 255, 0.9);
+}
 
-    <!-- KONTAKT -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2>Skontaktuj się ze mną</h2>
-                <p>Chętnie odpowiem na Twoje pytania</p>
-            </div>
+.hero-subtitle {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
 
-            <div class="contact-wrapper">
-                <div class="contact-methods">
-                    <div class="contact-method">
-                        <div class="contact-icon">
-                            <i class="fab fa-whatsapp"></i>
-                        </div>
-                        <h3>WhatsApp</h3>
-                        <p>Najszybciej odpowiadam tutaj</p>
-                        <a href="https://wa.me/48503975998?text=Cześć%20Damian,%20chciałbym%20się%20dowiedzieć%20więcej%20o%20Twoim%20studio" target="_blank" class="btn btn-outline">Napisz wiadomość</a>
-                    </div>
+.waitlist-box {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    padding: 30px;
+    margin-top: 30px;
+}
 
-                    <div class="contact-method">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <h3>Telefon</h3>
-                        <p>503 975 998</p>
-                        <a href="tel:503975998" class="btn btn-outline">Zadzwoń</a>
-                    </div>
+.waitlist-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #FFD700;
+}
 
-                    <div class="contact-method">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <h3>Email</h3>
-                        <p>damian@trenermedyczny.pl</p>
-                        <a href="mailto:damian@trenermedyczny.pl" class="btn btn-outline">Wyślij email</a>
-                    </div>
+.waitlist-subtitle {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.9);
+}
 
-                    <div class="contact-method">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <h3>Lokalizacja</h3>
-                        <p>Praczę Duże<br>ul. Pracka 1<br>Tarczyn</p>
-                        <a href="https://maps.google.com/?q=Praczę+Duże,+Pracka+1" target="_blank" class="btn btn-outline">Mapa</a>
-                    </div>
-                </div>
+.promo-price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
 
-                <div class="contact-form">
-                    <h3>Formularz Kontaktowy</h3>
-                    <p>Chcesz więcej informacji? Wpisz swoje dane - odpowiem szybko!</p>
-                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScMH0fF5ZID6zY5PeC5Wp7xXjTf1VHND4Pert7cbUI7pRWEIQ/viewform?embedded=true" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Ładowanie…</iframe>
-                </div>
-            </div>
-        </div>
-    </section>
+.old-price {
+    font-size: var(--font-size-xl);
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: line-through;
+}
 
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Studio Las</h4>
-                    <p>Fizjoterapia + Trening = Zdrowe Ciało</p>
-                </div>
+.new-price {
+    font-size: var(--font-size-3xl);
+    color: #4ade80;
+    font-weight: var(--font-weight-bold);
+}
 
-                <div class="footer-section">
-                    <h4>Szybkie Linki</h4>
-                    <ul>
-                        <li><a href="#home">Start</a></li>
-                        <li><a href="#about">O mnie</a></li>
-                        <li><a href="#pricing">Cennik</a></li>
-                        <li><a href="#contact">Kontakt</a></li>
-                    </ul>
-                </div>
+.waitlist-benefits {
+    list-style: none;
+    margin: 20px 0;
+    padding: 0;
+}
 
-                <div class="footer-section">
-                    <h4>Social Media</h4>
-                    <div class="social-icons">
-                        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-                        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-            </div>
+.waitlist-benefits li {
+    padding: 8px 0;
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.9);
+}
 
-            <div class="footer-bottom">
-                <p>&copy; 2025 Damian Krawiec. Wszystkie prawa zastrzeżone.</p>
-                <p>Studio otwiera się koniec 2025 roku</p>
-            </div>
-        </div>
-    </footer>
+.btn-cta {
+    background: #FF6B35;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    width: 100%;
+    margin-top: 15px;
+    display: block;
+    text-align: center;
+}
 
-    <!-- SCRIPTS -->
-    <script src="js/main.js"></script>
-</body>
-</html>
+.btn-cta:hover {
+    background: #E55A2B;
+    transform: scale(1.02);
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .hero-split {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-content {
+        padding: 40px 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-image-container {
+        height: 300px;
+    }
+}
+
+/* ===================================
+   SECTION HEADER
+   =================================== */
+
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-header h2 {
+    margin-bottom: 10px;
+}
+
+.section-header p {
+    font-size: 1.05rem;
+    color: var(--light-text);
+}
+
+/* ===================================
+   SECTIONS
+   =================================== */
+
+section {
+    padding: 80px 20px;
+}
+
+/* ===================================
+   ABOUT SECTION - 2 COLUMN WITH IMAGE
+   =================================== */
+
+.about {
+    background-color: var(--bg-light);
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 50px;
+    align-items: start;
+    margin-top: 40px;
+}
+
+.about-image {
+    position: sticky;
+    top: 100px;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+}
+
+.about-text h3 {
+    font-size: var(--font-size-2xl);
+    margin-bottom: 20px;
+    color: var(--color-text-primary);
+}
+
+.about-text h4 {
+    font-size: var(--font-size-lg);
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: var(--color-text-primary);
+}
+
+.about-text p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.specialties-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.specialties-list li {
+    padding: 8px 0;
+    font-size: var(--font-size-md);
+    color: var(--color-text-primary);
+}
+
+.qualifications {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 30px;
+    border: 2px solid var(--border-color);
+}
+
+.qualifications h4 {
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.qualifications ul {
+    list-style: none;
+}
+
+.qualifications li {
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.qualifications i {
+    color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .about-image {
+        position: relative;
+        top: 0;
+    }
+}
+
+/* ===================================
+   SPECIALIZATIONS
+   =================================== */
+
+.specializations {
+    background-color: var(--bg-white);
+}
+
+.specs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.spec-card {
+    background-color: var(--bg-light);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    transition: var(--transition);
+    border: 2px solid transparent;
+}
+
+.spec-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-color);
+    box-shadow: 0 15px 30px rgba(0, 102, 255, 0.1);
+}
+
+.spec-icon {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.spec-card h3 {
+    margin-bottom: 10px;
+}
+
+.spec-card p {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+}
+
+.testimonial-quote {
+    margin-top: 15px;
+    font-style: italic;
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    border-left: 3px solid var(--accent-color);
+    padding-left: 15px;
+}
+
+/* ===================================
+   PRICING
+   =================================== */
+
+.pricing {
+    background-color: var(--bg-light);
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.price-card {
+    background-color: var(--bg-white);
+    padding: 40px 25px;
+    border-radius: 10px;
+    text-align: center;
+    transition: var(--transition);
+    border: 2px solid var(--border-color);
+    position: relative;
+}
+
+.price-card.featured {
+    border-color: var(--primary-color);
+    box-shadow: 0 15px 35px rgba(0, 102, 255, 0.15);
+    transform: scale(1.05);
+}
+
+.price-card:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--accent-color);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.price-card h3 {
+    margin-bottom: 15px;
+}
+
+.price {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.price-per {
+    font-size: 0.8rem;
+    color: var(--light-text);
+    display: block;
+}
+
+.price-desc {
+    color: var(--light-text);
+    margin-bottom: 20px;
+}
+
+.price-features {
+    list-style: none;
+    margin: 25px 0;
+    text-align: left;
+}
+
+.price-features li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.95rem;
+}
+
+.price-features i {
+    color: var(--secondary-color);
+    width: 20px;
+}
+
+.price-card .btn {
+    width: 100%;
+}
+
+.pricing-note {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: var(--bg-white);
+    border-radius: 8px;
+}
+
+.pricing-note p {
+    margin-bottom: 5px;
+}
+
+/* ===================================
+   PROCESS
+   =================================== */
+
+.process {
+    background-color: var(--bg-white);
+}
+
+.process-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.step {
+    text-align: center;
+    padding: 30px;
+    background-color: var(--bg-light);
+    border-radius: 10px;
+    transition: var(--transition);
+}
+
+.step:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+.step-number {
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0 auto 15px;
+}
+
+.step h3 {
+    margin-bottom: 10px;
+}
+
+.step p {
+    font-size: 0.95rem;
+}
+
+/* ===================================
+   TESTIMONIALS
+   =================================== */
+
+.testimonials {
+    background-color: var(--bg-light);
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.testimonial-card {
+    background-color: var(--bg-white);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: var(--transition);
+}
+
+.testimonial-card:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+.stars {
+    color: #FFD700;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.testimonial-card p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.testimonial-author {
+    font-weight: 600;
+    color: var(--primary-color);
+    font-size: 0.9rem;
+}
+
+/* ===================================
+   SEKCJA - MOJE PASJE
+   =================================== */
+
+.passions {
+    padding: 80px 0;
+    background: var(--color-bg-primary);
+}
+
+.passions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.passion-card {
+    position: relative;
+    height: 350px;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform var(--duration-normal) var(--ease-standard);
+}
+
+.passion-card:hover {
+    transform: translateY(-10px);
+}
+
+.passion-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--duration-normal) var(--ease-standard);
+}
+
+.passion-card:hover .passion-image {
+    transform: scale(1.1);
+}
+
+.passion-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+    padding: 30px 20px;
+    color: white;
+    transform: translateY(0);
+    transition: transform var(--duration-normal) var(--ease-standard);
+}
+
+.passion-overlay h3 {
+    font-size: var(--font-size-xl);
+    margin-bottom: 10px;
+    color: white;
+}
+
+.passion-overlay p {
+    font-size: var(--font-size-sm);
+    opacity: 0.9;
+    margin: 0;
+}
+
+.passion-philosophy {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background: var(--color-bg-secondary);
+    border-radius: var(--radius-lg);
+    border-left: 4px solid var(--color-accent-primary);
+}
+
+.passion-philosophy p {
+    font-size: var(--font-size-md);
+    line-height: 1.8;
+    color: var(--color-text-secondary);
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .passions-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .passion-card {
+        height: 300px;
+    }
+}
+
+/* ===================================
+   SEKCJA - CERTYFIKATY
+   =================================== */
+
+.certifications {
+    padding: 80px 0;
+    background: var(--color-bg-secondary);
+}
+
+.certifications-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.cert-intro {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.cert-intro p {
+    font-size: var(--font-size-md);
+    line-height: 1.8;
+    color: var(--color-text-secondary);
+    margin-bottom: 20px;
+}
+
+.cert-highlights {
+    background: var(--color-bg-primary);
+    padding: 40px;
+    border-radius: var(--radius-lg);
+    margin-bottom: 40px;
+    box-shadow: var(--shadow-md);
+}
+
+.cert-highlights h3 {
+    font-size: var(--font-size-2xl);
+    margin-bottom: 25px;
+    color: var(--color-text-primary);
+    text-align: center;
+}
+
+.cert-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cert-list li {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--color-border);
+    font-size: var(--font-size-md);
+}
+
+.cert-list li:last-child {
+    border-bottom: none;
+}
+
+.cert-list i {
+    color: var(--color-accent-primary);
+    margin-right: 15px;
+    font-size: var(--font-size-xl);
+}
+
+.cert-cta {
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(135deg, var(--color-accent-primary), var(--color-accent-secondary));
+    border-radius: var(--radius-lg);
+}
+
+.cert-cta p {
+    color: white;
+    font-size: var(--font-size-lg);
+    margin-bottom: 20px;
+    font-weight: var(--font-weight-medium);
+}
+
+.cert-cta .btn {
+    background: white;
+    color: var(--color-accent-primary);
+    font-weight: var(--font-weight-semibold);
+    padding: 15px 35px;
+    font-size: var(--font-size-md);
+}
+
+.cert-cta .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.cert-cta .btn i {
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    .cert-highlights {
+        padding: 25px;
+    }
+}
+
+/* ===================================
+   FAQ
+   =================================== */
+
+.faq {
+    background-color: var(--bg-white);
+}
+
+.faq-items {
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.faq-item {
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 20px;
+}
+
+.faq-question {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.faq-question:hover {
+    color: var(--primary-color);
+}
+
+.faq-question h3 {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.faq-question i {
+    transition: var(--transition);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.faq-answer p {
+    padding-bottom: 20px;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 500px;
+}
+
+.faq-item.active .faq-question i {
+    transform: rotate(180deg);
+}
+
+/* ===================================
+   CONTACT
+   =================================== */
+
+.contact {
+    background-color: var(--bg-light);
+}
+
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.contact-methods {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.contact-method {
+    background-color: var(--bg-white);
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.contact-method:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+.contact-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.contact-method h3 {
+    margin-bottom: 10px;
+}
+
+.contact-method p {
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+}
+
+.contact-form {
+    background-color: var(--bg-white);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.contact-form h3 {
+    margin-bottom: 10px;
+}
+
+.contact-form p {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-methods {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ===================================
+   FOOTER
+   =================================== */
+
+.footer {
+    background-color: var(--dark-text);
+    color: white;
+    padding: 50px 20px 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-section h4 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    padding: 5px 0;
+}
+
+.footer-section a {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-section a:hover {
+    color: var(--primary-color);
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: var(--transition);
+}
+
+.social-icons a:hover {
+    background-color: var(--primary-color);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom p {
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 5px;
+}
+
+/* ===================================
+   ANIMATIONS
+   =================================== */
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* ===================================
+   RESPONSIVE
+   =================================== */
+
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    section {
+        padding: 60px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    section {
+        padding: 40px 20px;
+    }
+
+    .price-card.featured {
+        transform: scale(1);
+    }
+
+    .specs-grid,
+    .pricing-grid,
+    .testimonials-grid,
+    .process-steps {
+        grid-template-columns: 1fr;
+    }
+}
