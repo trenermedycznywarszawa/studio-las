@@ -1576,4 +1576,124 @@ section {
     }
 }
 
+/* ===================================
+   HERO - AUTHORITY ENHANCEMENTS
+   =================================== */
+
+.hero-credentials {
+    font-size: var(--font-size-lg);
+    color: white;
+    margin: 15px 0;
+    font-weight: var(--font-weight-semibold);
+}
+
+.promo-price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.old-price {
+    font-size: var(--font-size-xl);
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: line-through;
+}
+
+.new-price {
+    font-size: var(--font-size-3xl);
+    color: #4ade80;
+    font-weight: var(--font-weight-bold);
+}
+
+/* ===================================
+   HERO - AUTHORITY ENHANCEMENTS
+   =================================== */
+
+.hero-credentials {
+    font-size: var(--font-size-lg);
+    color: white;
+    margin: 15px 0;
+    font-weight: var(--font-weight-semibold);
+}
+
+.promo-price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.old-price {
+    font-size: var(--font-size-xl);
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: line-through;
+}
+
+.new-price {
+    font-size: var(--font-size-3xl);
+    color: #4ade80;
+    font-weight: var(--font-weight-bold);
+}
+
+/* ===================================
+   O MNIE - 2 COLUMN LAYOUT
+   =================================== */
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 50px;
+    align-items: start;
+}
+
+.about-image {
+    position: sticky;
+    top: 100px;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+}
+
+.specialties-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.specialties-list li {
+    padding: 8px 0;
+    font-size: var(--font-size-md);
+    color: var(--color-text-primary);
+}
+
+.about-text h3 {
+    font-size: var(--font-size-2xl);
+    margin-bottom: 20px;
+    color: var(--color-text-primary);
+}
+
+.about-text h4 {
+    font-size: var(--font-size-lg);
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: var(--color-text-primary);
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .about-image {
+        position: relative;
+        top: 0;
+    }
+}
 }
